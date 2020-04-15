@@ -2,11 +2,11 @@
 
 @section('content')
 <a href="/posts" class="btn btn-primary">Go Back</a>
-<div class="container row center-block">
-    <div class="col">
+<div class="container-fluid row">
+    <div class="col center-block">
     
         <h1>{{$post->title}}</h1>
-        <img style="width:30%" src="/storage/user_images/{{$post->user_image}}">
+        <img style="width:60%" src="/storage/user_images/{{$post->user_image}}">
         <br>
         <br>
         <div>
