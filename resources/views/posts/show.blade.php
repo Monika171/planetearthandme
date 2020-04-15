@@ -2,16 +2,22 @@
 
 @section('content')
 <a href="/posts" class="btn btn-primary">Go Back</a>
-<h1>{{$post->title}}</h1>
-<img style="width:100%" src="/storage/user_images/{{$post->user_image}}">
-<br>
-<br>
-<div>
-    {!!$post->body!!}
+<div class="container row center-block">
+    <div class="col">
+    
+        <h1>{{$post->title}}</h1>
+        <img style="width:30%" src="/storage/user_images/{{$post->user_image}}">
+        <br>
+        <br>
+        <div>
+            {!!$post->body!!}
+        </div>
+        <hr>
+        <small>Written on {{$post->created_at}} by {{$post->user->name}}</small>
+        <hr>
+    </div>
 </div>
-<hr>
-<small>Written on {{$post->created_at}} by {{$post->user->name}}</small>
-<hr>
+
 @if(!Auth::guest())
     @if(Auth::user()->id == $post->user_id)
         <a href="/posts/{{$post->id}}/edit" class="btn btn-primary">Edit</a>

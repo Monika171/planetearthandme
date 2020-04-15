@@ -14,9 +14,9 @@
 
             </ul>-->
             <ul class="navbar-nav mr-auto">
-                    <li>
+                    <!--<li>
                         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                    </li>
+                    </li>-->
                     <li>
                         <a class="nav-link" href="/posts">Creature~thoughts<span class="sr-only">(current)</span></a>
                     </li>
